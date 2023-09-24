@@ -14,7 +14,8 @@ public class PalindromeObserver implements Observer{
     this.nbrPalindromes = nbrPalindromes;
   }
 
-  public int getNbrPalindromes() {
+  @Override
+  public int getNbObserver() {
     return nbrPalindromes;
   }
 }

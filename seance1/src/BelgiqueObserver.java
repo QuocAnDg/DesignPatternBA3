@@ -1,9 +1,9 @@
 public class BelgiqueObserver implements Observer{
   private int nbBelgique = 0;
-
+  private static final String BELGIQUE = "Belgique";
   @Override
   public void traiterLigne(String s) {
-    if (s.contains("Belgique")){
+    if (s.contains(BELGIQUE)){
       setNbBelgique(nbBelgique++);
     }
   }
@@ -11,7 +11,8 @@ public class BelgiqueObserver implements Observer{
     this.nbBelgique = nbBelgique;
   }
 
-  public int getNbBelgique() {
+  @Override
+  public int getNbObserver() {
     return nbBelgique;
   }
 }

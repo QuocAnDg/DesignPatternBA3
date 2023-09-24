@@ -8,7 +8,8 @@ public class LigneObserver implements Observer{
     this.nbLigne = nbLigne;
   }
 
-  public int getNbLigne() {
+  @Override
+  public int getNbObserver() {
     return nbLigne;
   }
 }

@@ -10,7 +10,8 @@ public class MotObserver implements Observer{
     this.nbMots = nbMots;
   }
 
-  public int getNbMots() {
+  @Override
+  public int getNbObserver() {
     return nbMots;
   }
 }

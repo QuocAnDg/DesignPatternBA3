@@ -27,29 +27,18 @@ public class 	AnalyseurDeTexte {
 			System.out.println("Erreur d'ouverture");
 		}
 		while ((ligne = lecteurAvecBuffer.readLine()) != null) {
-			nbrLignes++;
-			if (ligne.contains("Belgique")) {
-				nbrBelgique++;
-			}
-			for (String mot : ligne.trim().split(" ")) {
-				nbrMots++;
-				StringBuffer temp = new StringBuffer(mot);
-				if (mot.equals(temp.reverse().toString())) {
-					nbrPalindromes++;
-				}
-			}
-
+			notifyObserver(ligne);
 		}
 		lecteurAvecBuffer.close();
-		System.out.println("Il y avait " + nbrLignes + " lignes.");
-		System.out.println("Il y avait " + nbrMots + " mots.");
-		System.out.println("Il y avait " + nbrPalindromes + " palindromes.");
-		System.out.println("Il y avait " + nbrBelgique + " lignes contenant Belgique.");
+		System.out.println("Il y avait " + ligneObserver.getNbObserver() + " lignes.");
+		System.out.println("Il y avait " + belgiqueObserver.getNbObserver() + " mots.");
+		System.out.println("Il y avait " + motObserver.getNbObserver() + " palindromes.");
+		System.out.println("Il y avait " + palindromeObserver.getNbObserver() + " lignes contenant Belgique.");
 	}
 	public static void registerObserver (Observer observer){
 		observerCollection.add(observer);
 	}
-	public static void notifyObserver(Observer observer, String s){
+	public static void notifyObserver(String s){
 		for (Observer observer1 : observerCollection) {
 			observer1.traiterLigne(s);
 		}
