@@ -2,14 +2,10 @@ public class LigneObserver implements Observer{
   private int nbLigne = 0;
   @Override
   public void traiterLigne(String s) {
-    setNbLigne(nbLigne++);
+    nbLigne++;
   }
-  public void setNbLigne(int nbLigne) {
-    this.nbLigne = nbLigne;
-  }
-
   @Override
-  public int getNbObserver() {
-    return nbLigne;
+  public void finFichier() {
+    System.out.println("Il y avait " + nbLigne + " lignes.");
   }
 }

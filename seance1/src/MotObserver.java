@@ -2,16 +2,14 @@ public class MotObserver implements Observer{
   private int nbMots = 0;
   @Override
   public void traiterLigne(String s) {
-    String[] mots = s.split(" ");
-    setNbMots(mots.length);
-  }
-
-  public void setNbMots(int nbMots) {
-    this.nbMots = nbMots;
+    String[] mots = s.trim().split(" ");
+    for (int i = 0; i < mots.length; i++) {
+      nbMots++;
+    }
   }
 
   @Override
-  public int getNbObserver() {
-    return nbMots;
+  public void finFichier() {
+    System.out.println("Il y avait " + nbMots + " mots.");
   }
 }

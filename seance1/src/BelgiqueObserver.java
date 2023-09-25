@@ -3,8 +3,12 @@ public class BelgiqueObserver implements Observer{
   private static final String BELGIQUE = "Belgique";
   @Override
   public void traiterLigne(String s) {
-    if (s.contains(BELGIQUE)){
-      setNbBelgique(nbBelgique++);
+    String[] mots = s.trim().split(" ");
+    for (int i = 0; i < mots.length; i++) {
+
+      if (mots[i].equals(BELGIQUE)){
+        nbBelgique++;
+      }
     }
   }
   public void setNbBelgique(int nbBelgique) {
@@ -12,7 +16,7 @@ public class BelgiqueObserver implements Observer{
   }
 
   @Override
-  public int getNbObserver() {
-    return nbBelgique;
+  public void finFichier() {
+    System.out.println("Il y avait " + nbBelgique + " lignes contenant Belgique.");
   }
 }

@@ -7,22 +7,13 @@ import java.util.List;
 
 // 1) Stratégie
 // 2)
-public class 	AnalyseurDeTexte {
-	public static List<Observer> observerCollection = new ArrayList<>();
-	public static void main(String[] args) throws IOException {
+public class AnalyseurDeTexte {
+	public List<Observer> observerCollection = new ArrayList<>();
+	public void lireFichier(String filename) throws IOException {
 		BufferedReader lecteurAvecBuffer = null;
 		String ligne;
-		Observer belgiqueObserver = new BelgiqueObserver();
-		Observer ligneObserver = new LigneObserver();
-		Observer motObserver = new MotObserver();
-		Observer palindromeObserver = new PalindromeObserver();
-		registerObserver(belgiqueObserver);
-		registerObserver(ligneObserver);
-		registerObserver(motObserver);
-		registerObserver(palindromeObserver);
-		int nbrMots = 0, nbrLignes = 0, nbrPalindromes = 0, nbrBelgique = 0;
 		try {
-			lecteurAvecBuffer = new BufferedReader(new FileReader(args[0]));
+			lecteurAvecBuffer = new BufferedReader(new FileReader(filename));
 		} catch (FileNotFoundException e) {
 			System.out.println("Erreur d'ouverture");
 		}
@@ -30,19 +21,20 @@ public class 	AnalyseurDeTexte {
 			notifyObserver(ligne);
 		}
 		lecteurAvecBuffer.close();
-		System.out.println("Il y avait " + ligneObserver.getNbObserver() + " lignes.");
-		System.out.println("Il y avait " + belgiqueObserver.getNbObserver() + " mots.");
-		System.out.println("Il y avait " + motObserver.getNbObserver() + " palindromes.");
-		System.out.println("Il y avait " + palindromeObserver.getNbObserver() + " lignes contenant Belgique.");
+		for (Observer observer : observerCollection) {
+			observer.finFichier();
+		}
 	}
-	public static void registerObserver (Observer observer){
+	public void registerObserver (Observer observer){
 		observerCollection.add(observer);
 	}
-	public static void notifyObserver(String s){
-		for (Observer observer1 : observerCollection) {
-			observer1.traiterLigne(s);
+	public void notifyObserver(String s){
+		for (Observer observer : observerCollection) {
+			observer.traiterLigne(s);
 		}
 	}
 }
+
+// lireFichier(String file) void
 
 

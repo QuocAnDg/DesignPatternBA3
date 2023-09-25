@@ -6,16 +6,12 @@ public class PalindromeObserver implements Observer{
     for (String mot : mots) {
       StringBuffer temp = new StringBuffer(mot);
       if (mot.equals(temp.reverse().toString())) {
-        setNbrPalindromes(nbrPalindromes++);
+        nbrPalindromes++;
       }
     }
   }
-  public void setNbrPalindromes(int nbrPalindromes) {
-    this.nbrPalindromes = nbrPalindromes;
-  }
-
   @Override
-  public int getNbObserver() {
-    return nbrPalindromes;
+  public void finFichier() {
+    System.out.println("Il y avait " + nbrPalindromes+ " palindromes.");
   }
 }
