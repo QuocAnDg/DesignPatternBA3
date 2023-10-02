@@ -1,12 +1,21 @@
+import java.util.ArrayList;
+
 public class Or implements Condition{
-  private ComparatorStrategy strategy1;
-  private ComparatorStrategy strategy2;
-  public Or(ComparatorStrategy strategy1, ComparatorStrategy strategy2){
-    this.strategy1 = strategy1;
-    this.strategy2 = strategy2;
+  ComparatorStrategy[] strategies;
+  public Or(ComparatorStrategy... strategies){
+    this.strategies = strategies;
   }
   @Override
   public boolean cmpCondition(String s) {
-    return this.strategy1.imprimerSi(s) || this.strategy2.imprimerSi(s);
+    int n = strategies.length -1;
+    boolean ok = true;
+    for (int i = 0; i < n; i++) {
+      ok = strategies[i].imprimerSi(s) || strategies[i+1].imprimerSi(s);
+      if (!ok){
+        return ok;
+      }
+    }
+    return ok;
   }
+
 }

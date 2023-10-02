@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/seance1/seance1.iml" filepath="$PROJECT_DIR$/seance1/seance1.iml" />
       <module fileurl="file://$PROJECT_DIR$/seance2/seance2.iml" filepath="$PROJECT_DIR$/seance2/seance2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seance3-ex3A/seance3-ex3A.iml" filepath="$PROJECT_DIR$/seance3-ex3A/seance3-ex3A.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seance3Exemple/seance3AbstractFactory.iml" filepath="$PROJECT_DIR$/seance3Exemple/seance3AbstractFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seance3FactoryMethod/seance3TemplateMethod.iml" filepath="$PROJECT_DIR$/seance3FactoryMethod/seance3TemplateMethod.iml" />
     </modules>
   </component>
 </project>

@@ -3,12 +3,16 @@ public class Main {
   public static void main(String[] args) {
     CompoundCond compoundCond = new CompoundCond();
 
-    Condition and1 = new And(new CommencerParStrategy('t'), new LongueurStrategy(4));
-    Condition not1 = new Not(new CommencerParStrategy('t'));
+    // test 1
+    Condition and1 = new And(new CommencerParStrategy('e'), new LongueurStrategy(3), new PalindromeStrategy());
+    System.out.println(and1.cmpCondition("ete"));
 
-    compoundCond.addCond(and1);
-    compoundCond.addCond(not1);
-
+    // test2
+    Condition and3 = new And(new CommencerParStrategy('e'), new PalindromeStrategy());
+    Condition and4 = new And(new LongueurStrategy(3));
+    compoundCond.addCond(and3);
+    compoundCond.addCond(and4);
+    System.out.println(compoundCond.cmpCondition("ete"));
 
   }
 }
