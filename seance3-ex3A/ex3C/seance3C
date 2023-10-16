@@ -1,0 +1,14 @@
+3 Pattern
+1) Decorator ->> Captain  implements Battleship
+2) Strategy -> Distance -> KM et Miles
+3) Adapter -> BattleFishing Boat
+
+
+
+Participants théorique             nom utilisés
+component                  =>      Boisson
+ConcreteComponent          =>      Cafe, Dessert, Décaféine, Moka
+Decorator                  =>      Additif
+ConcreteDecorator          =>      Crème, Lait, Sucre
+Nom théorique des méthodes         Nom utilisé dans le code
+operation()                =>      getNom(), toString(), prix()
