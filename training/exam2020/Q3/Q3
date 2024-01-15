@@ -1,0 +1,44 @@
+Nom du Pattern : Iterator (Execution)
+Participants théoriques           Noms utilisés dans le code
+Iterator                          /
+Aggregate                         /
+ConcreteIterator                  Execution
+ConcreteAggregate                 Hanoi
+
+Nom théorique des méthodes        Nom utilisé dans le code
+hasNext()                         hasNext()
+next()                            next()
+iterator()                        iterator()
+
+Nom du Pattern : Composite (Execuction)
+Participants théoriques           Noms utilisés dans le code
+IComponent                        Deplacement
+Composite                         DeplacementTour
+Leaf                              DeplacementDisque
+Nom théorique des méthodes        Nom utilisé dans le code
+operation()                       stocker()
+
+Nom du Pattern : Command (Action)
+Participants théoriques           Noms utilisés dans le code
+Client                            GUI
+Command                           Action
+Invoker                           ActionConsole
+Receiver                          DeplacementDisque
+ConcreteCommand                   ActionGUI
+
+
+Nom théorique des méthodes        Nom utilisé dans le code
+execute()                         effectuer()
+doAction()                        deplacer()
+Nom du Pattern : Observer (Vue)
+Participants théoriques           Noms utilisés dans le code
+Observer                          Vue
+ConcreteObserverA                 Console
+ConcreteObserverB                 GUI
+Subject                           Execution
+
+Nom théorique des méthodes        Nom utilisé dans le code
+update()                          update(DeplacementDisque d)
+notifyObservers()                 notifyVues()
+registerObserver()                addVue(Vue vue)
+removeObserver()                  removeVue(Vue vue)

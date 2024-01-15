@@ -1,0 +1,6 @@
+Participants théoriques                 Noms utilisés dans le code
+TargetObject                            RobotImpl
+Builder                                 Builder
+
+Nom théorique des méthodes              Nom utilisé dans le code
+build()                                 build()

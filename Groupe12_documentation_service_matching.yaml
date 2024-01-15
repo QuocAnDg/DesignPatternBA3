@@ -1,0 +1,75 @@
+openapi: 3.0.3
+info:
+  title: Vinci Stock eXchange matching service
+  description: Microservice handling matching service
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:9004'
+    description: Development server
+paths:
+  /matching:
+    post:
+      summary: determinate security's price
+      responses:
+        200:
+          description: price fixed
+components:
+  schemas:
+    matching:
+      type: object
+      properties:
+        orders:
+          type: array
+          items:
+            type: object
+        price:
+          type: number
+          format: double
+      example:
+        orders:
+          - accountHash: dz#71AD
+            type: LIMIT
+            side: BUYER
+            status: NEW
+          - accountHash: 1#!azE€AZ
+            type: MARKET
+            side: SELLER
+            status: EXECUTED
+
+    order:
+      type: object
+      properties:
+        accountId:
+          type: integer
+        type:
+          type: string
+          enum:
+            - LIMIT
+            - MARKET
+        side:
+          type: string
+          enum:
+            - BUYER
+            - SELLER
+        status:
+          type: string
+          enum:
+            - NEW
+            - EXECUTED
+            - PARTIALLY_EXECUTED
+      example:
+        accountHash: 12
+        type: LIMIT
+        side: BUYER
+        status: NEW
+    execution:
+      type: object
+      properties:
+        order1ID:
+          type: integer
+        order2ID:
+          type: integer
+      example:
+        order1ID: 430
+        order2ID: 445
+

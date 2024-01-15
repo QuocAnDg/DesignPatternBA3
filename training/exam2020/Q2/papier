@@ -1,0 +1,11 @@
+Nom du Pattern : State
+Participants théoriques           Noms utilisés dans le code
+State                             State
+ConcreteStateA                    LockState
+ConcreteStateB                    PlayState
+ConcreteStateC                    ReadyState
+Context                           Player
+
+Nom théorique des méthodes        Nom utilisé dans le code
+handle()                          onPlay(Player player), onLock(Player player), onNext(Player player), onPrevious(Player player)
+request()                         onPlay(), onLock(), onNext(), onPrevious()

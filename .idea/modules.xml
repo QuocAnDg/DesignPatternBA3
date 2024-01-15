@@ -2,10 +2,33 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/training/exo3/AbstractFactory/AbstractFactory.iml" filepath="$PROJECT_DIR$/training/exo3/AbstractFactory/AbstractFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo7/AbstractFactoryExo7/AbstractFactoryExo7.iml" filepath="$PROJECT_DIR$/training/exo7/AbstractFactoryExo7/AbstractFactoryExo7.iml" />
       <module fileurl="file://$PROJECT_DIR$/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex9/Ex9.iml" filepath="$PROJECT_DIR$/Ex9/Ex9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo3/FactoryMethod/FactoryMethod.iml" filepath="$PROJECT_DIR$/training/exo3/FactoryMethod/FactoryMethod.iml" />
       <module fileurl="file://$PROJECT_DIR$/seance3-ex3A/MethodFactory/MethodFactory.iml" filepath="$PROJECT_DIR$/seance3-ex3A/MethodFactory/MethodFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test4/MethodTemplate/MethodTemplate.iml" filepath="$PROJECT_DIR$/test4/MethodTemplate/MethodTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo7/PrototypeExo7/PrototypeExo7.iml" filepath="$PROJECT_DIR$/training/exo7/PrototypeExo7/PrototypeExo7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exam2020/Q1/Q1.iml" filepath="$PROJECT_DIR$/training/exam2020/Q1/Q1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exam2020/Q2/Q2.iml" filepath="$PROJECT_DIR$/training/exam2020/Q2/Q2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exam2020/Q3/Q3.iml" filepath="$PROJECT_DIR$/training/exam2020/Q3/Q3.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex3B/ex3B.iml" filepath="$PROJECT_DIR$/ex3B/ex3B.iml" />
       <module fileurl="file://$PROJECT_DIR$/seance3-ex3A/ex3C/ex3C.iml" filepath="$PROJECT_DIR$/seance3-ex3A/ex3C/ex3C.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex7/ex7.iml" filepath="$PROJECT_DIR$/ex7/ex7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex8/ex8.iml" filepath="$PROJECT_DIR$/ex8/ex8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exam2014/exam2014.iml" filepath="$PROJECT_DIR$/exam2014/exam2014.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exam2020/exam2020.iml" filepath="$PROJECT_DIR$/training/exam2020/exam2020.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo1/exo1.iml" filepath="$PROJECT_DIR$/training/exo1/exo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo2/exo2.iml" filepath="$PROJECT_DIR$/training/exo2/exo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo3/exo3.iml" filepath="$PROJECT_DIR$/training/exo3/exo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo3/exo3b/exo3b.iml" filepath="$PROJECT_DIR$/training/exo3/exo3b/exo3b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo4/exo4.iml" filepath="$PROJECT_DIR$/training/exo4/exo4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo5/exo5.iml" filepath="$PROJECT_DIR$/training/exo5/exo5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo5/exo5B/exo5B.iml" filepath="$PROJECT_DIR$/training/exo5/exo5B/exo5B.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo5/exo5C/exo5C.iml" filepath="$PROJECT_DIR$/training/exo5/exo5C/exo5C.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo7/exo7.iml" filepath="$PROJECT_DIR$/training/exo7/exo7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/exo8/exo8.iml" filepath="$PROJECT_DIR$/training/exo8/exo8.iml" />
       <module fileurl="file://$PROJECT_DIR$/seance1/seance1.iml" filepath="$PROJECT_DIR$/seance1/seance1.iml" />
       <module fileurl="file://$PROJECT_DIR$/seance2/seance2.iml" filepath="$PROJECT_DIR$/seance2/seance2.iml" />
       <module fileurl="file://$PROJECT_DIR$/seance3-ex3A/seance3-ex3A.iml" filepath="$PROJECT_DIR$/seance3-ex3A/seance3-ex3A.iml" />
@@ -13,6 +36,8 @@
       <module fileurl="file://$PROJECT_DIR$/seance3Exemple/seance3AbstractFactory.iml" filepath="$PROJECT_DIR$/seance3Exemple/seance3AbstractFactory.iml" />
       <module fileurl="file://$PROJECT_DIR$/seance3FactoryMethod/seance3TemplateMethod.iml" filepath="$PROJECT_DIR$/seance3FactoryMethod/seance3TemplateMethod.iml" />
       <module fileurl="file://$PROJECT_DIR$/seance4/seance4.iml" filepath="$PROJECT_DIR$/seance4/seance4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test4/test4.iml" filepath="$PROJECT_DIR$/test4/test4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training/training.iml" filepath="$PROJECT_DIR$/training/training.iml" />
     </modules>
   </component>
 </project>

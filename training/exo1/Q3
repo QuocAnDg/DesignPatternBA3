@@ -1,0 +1,11 @@
+Nom du Pattern :
+Participants théoriques        Noms utilisés dans le code
+Observer                    ->    Observer
+ConcreteObserver(A,B,C,..)  ->    PalindromeObserver, MotObserver, MotsObserver, LigneObserver
+Subject                     ->    AnalyseurDeTexte
+
+Nom théorique des méthodes     Nom utilisé dans le code
+update()                    ->    traiterLigne()
+registerObserver(observer)  ->    registerObserver(observer)
+unregisterObserver(observer)->    unregisterObserver(observer)
+notifyObservers()            ->    notifyObservers(ligne) et notifyObservers()

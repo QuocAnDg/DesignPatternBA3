@@ -1,0 +1,53 @@
+openapi: 3.0.3
+info:
+  title: Vinci Stock eXchange users service
+  description: Microservice handling users service
+  version: 1.0.0
+servers:
+  - url: http://localhost:9001
+    description: Development server
+paths:
+  /users:
+    post:
+      summary: Create a user
+      requestBody:
+        description: User to create
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/user'
+      responses:
+        201:
+          description: User created
+  /users/{id}:
+    parameters:
+      - name: id
+        in: path
+        description: id of the user
+        required: true
+        schema:
+          type: integer
+          example: 1
+    get:
+      summary: Read a user
+      responses:
+        404:
+          description: User not found
+        200:
+          description: Found user
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/user'
+components:
+  schemas:
+    user:
+      type: object
+      properties:
+        firstname:
+          type: string
+        lastname:
+          type: string
+      example:
+        firstname: Bleu
+        lastname: Marine

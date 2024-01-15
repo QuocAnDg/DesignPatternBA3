@@ -1,0 +1,22 @@
+Nom du Pattern : Facade
+Participants théoriques        Noms utilisés dans le code
+Observer                    ->    Observer
+ConcreteObserver(A,B,C,..)  ->    PalindromeObserver, MotObserver, MotsObserver, LigneObserver
+Subject                     ->    AnalyseurDeTexte
+
+Nom théorique des méthodes     Nom utilisé dans le code
+update()                    ->    traiterLigne()
+registerObserver(observer)  ->    registerObserver(observer)
+unregisterObserver(observer)->    unregisterObserver(observer)
+notifyObservers()            ->    notifyObservers(ligne) et notifyObservers()
+
+Nom du Pattern : Template Method
+Participants théoriques        Noms utilisés dans le code
+AbstractClass                  DwarvenMineWorker
+ConcreteClass                  DwarvenCartOperator, DwarvenGoldDigger, DwarvenGoldmine, DwarvenMineWorker, DwarvenTunnelDigger
+
+
+Nom théorique des méthodes     Nom utilisé dans le code
+TemplateMethod()               action(Action... actions)
+primitiveOperation1()          work()
+primitiveOperation2()          name()
